@@ -7,9 +7,9 @@ html { scroll-behavior: smooth; }
 
 body {
     background-color: rgb(7, 2, 23);
-    color: rgba(245, 245, 245, 0.75);
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
+    color:rgba(245, 245, 245, 0.659);
+    font-family:sans-serif;
+    font-size: clamp(1.25rem,3vh, 2.25rem);
 }
 
 a { text-decoration: none; }
@@ -19,7 +19,8 @@ a, a:link, a:visited, a:active { color: rgba(245, 245, 245, 0.5); }
 /* ── Header ── */
 .site-header {
     position: fixed;
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
     width: 100%;
     z-index: 100;
     background-color: rgba(7, 2, 23, 0.85);
@@ -33,21 +34,44 @@ a, a:link, a:visited, a:active { color: rgba(245, 245, 245, 0.5); }
     padding: 0 2rem;
     height: 64px;
 }
-.site-title { font-size: 1.2rem; font-weight: 700; color: #fff; white-space: nowrap; }
-.main-nav ul { display: flex; gap: 2rem; list-style: none; }
-.main-nav a { color: rgba(245,245,245,0.75); font-size: 0.95rem; transition: color 0.2s; }
-.main-nav a:hover, .main-nav a.active { color: #4fc3f7; text-decoration: none; }
+.site-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    white-space: nowrap;
+}
+.main-nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+.main-nav a {
+    color: rgba(245, 245, 245, 0.75);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+.main-nav a:hover,
+.main-nav a.active {
+    color: #4fc3f7;
+}
 .btn-quote {
     background-color: #4fc3f7;
     color: #07021a;
     padding: 0.45rem 1.2rem;
     border-radius: 4px;
+    text-decoration: none;
     font-size: 0.9rem;
     font-weight: 600;
     white-space: nowrap;
     transition: background-color 0.2s;
 }
-.btn-quote:hover { background-color: #81d4fa; text-decoration: none; }
+
+.btn-quote:hover {
+    background-color: #81d4fa;
+}
 
 /* ── Hero ── */
 main { padding-top: 64px; }
