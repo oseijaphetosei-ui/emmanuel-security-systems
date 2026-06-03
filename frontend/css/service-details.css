@@ -112,11 +112,19 @@ main { padding-top: 64px; }
     align-items: stretch;
     gap: 0;
     max-width: 1100px;
+    height: 600px;
     margin: 3rem auto;
     background-color: rgb(12, 6, 30);
     border-radius: 1.25rem;
     overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.06);
+    opacity: 0;
+    transform: translateY(48px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
+}
+.service-section.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 .service-section.reverse { flex-direction: row-reverse; }
 
@@ -145,7 +153,12 @@ main { padding-top: 64px; }
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 0.75rem;
     padding: 1.25rem 1.5rem;
+    transition: background-color 0.25s ease;
 }
+.capabilities-box:hover {
+    background-color: rgba(255, 255, 255, 0.10);
+}
+
 .capabilities-box h3 {
     font-size: 0.95rem;
     font-weight: 600;
@@ -179,7 +192,15 @@ main { padding-top: 64px; }
     color: #4fc3f7 !important;
     font-weight: 600;
     font-size: 0.95rem;
-    transition: color 0.2s;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(6px);
+    transition: opacity 0.3s ease, transform 0.3s ease, color 0.2s;
+}
+.service-section:hover .service-cta {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
 }
 .service-cta:hover { color: #81d4fa !important; text-decoration: none; }
 
