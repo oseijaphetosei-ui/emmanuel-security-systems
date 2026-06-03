@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+
+
+body {
+    background-color: rgb(7, 2, 23);
+    color:rgba(245, 245, 245, 0.659);
+    font-family:sans-serif;
+    font-size: clamp(1.25rem,3vh, 2.25rem);
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+a, a:link, a:visited, a:hover, a:active {
+    color: rgba(245, 245, 245, 0.474); /* Or use an exact color, e.g., #000000 */
+}
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: rgba(7, 2, 23, 0.85);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    height: 64px;
+}
+
+.site-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+.main-nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+.main-nav a {
+    color: rgba(245, 245, 245, 0.75);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: #4fc3f7;
+}
+.btn-quote {
+    background-color: #4fc3f7;
+    color: #07021a;
+    padding: 0.45rem 1.2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: background-color 0.2s;
+}
+
+.btn-quote:hover {
+    background-color: #81d4fa;
+}
