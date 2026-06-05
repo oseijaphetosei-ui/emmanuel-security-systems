@@ -33,6 +33,16 @@ a, a:link, a:visited, a:active { color: rgba(245, 245, 245, 0.474); }
     padding: 0 2rem;
     height: 64px;
 }
+.site-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+.site-logo {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+}
 .site-title {
     font-size: 1.2rem;
     font-weight: 700;
@@ -275,7 +285,7 @@ main { padding-top: 64px; }
 }
 .site-footer ul { list-style: none; font-size: 0.85rem; }
 .site-footer ul li { margin-bottom: 0.5rem; }
-#footer-col-headings { margin-bottom: 1.25rem; font-size: 1.1rem; color: #fff; }
+.footer-col-headings { margin-bottom: 1.25rem; font-size: 1.1rem; color: #fff; }
 .footer-col ul li a { color: rgba(245, 245, 245, 0.5); transition: color 0.2s; }
 .footer-col ul li a:hover { color: #4fc3f7; text-decoration: none; }
 .footer-contact ul li {

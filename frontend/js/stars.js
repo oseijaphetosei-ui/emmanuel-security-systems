@@ -1,7 +1,7 @@
 const container = document.getElementById('stars-container');
 const STAR_COUNT = 120;
 
-for (let i = 0; i < STAR_COUNT; i++) {
+if (container) for (let i = 0; i < STAR_COUNT; i++) {
     const star = document.createElement('div');
     star.classList.add('star');
 

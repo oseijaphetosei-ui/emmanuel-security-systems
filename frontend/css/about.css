@@ -42,6 +42,16 @@ a, a:link, a:visited, a:hover, a:active {
     height: 64px;
 }
 
+.site-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+.site-logo {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+}
 .site-title {
     font-size: 1.2rem;
     font-weight: 700;
@@ -396,7 +406,7 @@ main {
     font-size: 0.85rem;
     transition: color 0.2s;
 }
-#footer-col-headings{
+.footer-col-headings{
     margin-bottom: 2rem;
     font-size: 1.3rem;
     color: #ffffff;

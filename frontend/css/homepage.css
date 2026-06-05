@@ -96,6 +96,16 @@ a, a:link, a:visited, a:hover, a:active {
     height: 64px;
 }
 
+.site-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+.site-logo {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+}
 .site-title {
     font-size: 1.2rem;
     font-weight: 700;
@@ -263,7 +273,7 @@ main {
     margin: 0 auto;
     margin-top: 7rem;
     color:rgb(95, 88, 88);
-    font-weight: 50px;
+    font-weight: 500;
     opacity: 0;
     transform: translateY(24px);
     transition: opacity 0.5s ease, transform 0.5s ease;
@@ -379,7 +389,7 @@ main {
     font-size: 0.85rem;
     transition: color 0.2s;
 }
-#footer-col-headings{
+.footer-col-headings{
     margin-bottom: 2rem;
     font-size: 1.3rem;
     color: #ffffff;
