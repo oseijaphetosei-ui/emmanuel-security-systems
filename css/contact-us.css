@@ -37,6 +37,7 @@ a, a:link, a:visited, a:active { color: rgba(245, 245, 245, 0.474); }
     display: flex;
     align-items: center;
     gap: 0.6rem;
+    text-decoration: none;
 }
 .site-logo {
     width: 42px;
