@@ -73,6 +73,12 @@ The `CNAME` file maps the custom domain `emmanuelsecuritysystems.com` to the Git
 
 ---
 
+## License
+
+Copyright (c) 2026 Emmanuel Security Systems. All rights reserved. See [LICENSE](LICENSE) for details.
+
+---
+
 ## Contact
 
 **Emmanuel Security Systems**  
